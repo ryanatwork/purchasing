@@ -10,10 +10,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110401010504) do
+ActiveRecord::Schema.define(:version => 20110401015544) do
 
   create_table "bidtypes", :force => true do |t|
-    t.text     "abbreviation"
+    t.string   "abbreviation"
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
