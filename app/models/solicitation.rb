@@ -1,5 +1,5 @@
 class Solicitation < ActiveRecord::Base
-   validates :description,  :presence => true
+   validates :bid_description,  :presence => true
 
 end
   
