@@ -13,7 +13,8 @@
 
   <div class="field">
     <%= f.label :bid_type %><br />
-    <%= f.text_field :bid_type %>
+	<%= select("solicitation", "bid_type", Bidtype.all.collect {|p| [ p.description, p.id ] })%>
+	 
   </div>
   <div class="field">
     <%= f.label :bid_description %><br />
@@ -29,7 +30,7 @@
   </div>
   <div class="field">
     <%= f.label :contact_id %><br />
-    <%= f.text_field :contact_id %>
+	<%= select("solicitation", "contact_id", Contact.all.collect {|p| [ p.name, p.id ] })%>
   </div>
   <div class="actions">
     <%= f.submit %>

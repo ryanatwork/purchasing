@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110401015544) do
+ActiveRecord::Schema.define(:version => 20110401030915) do
 
   create_table "bidtypes", :force => true do |t|
     t.string   "abbreviation"
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(:version => 20110401015544) do
   end
 
   create_table "solicitations", :force => true do |t|
-    t.integer  "bid_type"
+    t.integer  "bid_type_id"
     t.text     "bid_description"
     t.date     "open_date"
     t.date     "closed_date"
