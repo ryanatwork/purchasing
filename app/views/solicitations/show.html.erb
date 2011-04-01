@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Bid type:</b>
+  <%= @solicitation.bid_type %>
+</p>
+
+<p>
+  <b>Bid description:</b>
+  <%= @solicitation.bid_description %>
+</p>
+
+<p>
+  <b>Open date:</b>
+  <%= @solicitation.open_date %>
+</p>
+
+<p>
+  <b>Closed date:</b>
+  <%= @solicitation.closed_date %>
+</p>
+
+<p>
+  <b>Contact:</b>
+  <%= @solicitation.contact_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_solicitation_path(@solicitation) %> |
+<%= link_to 'Back', solicitations_path %>

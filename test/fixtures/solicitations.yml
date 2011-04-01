@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  bid_type: 1
+  bid_description: MyText
+  open_date: 2011-03-31
+  closed_date: 2011-03-31
+  contact_id: 1
+
+two:
+  bid_type: 1
+  bid_description: MyText
+  open_date: 2011-03-31
+  closed_date: 2011-03-31
+  contact_id: 1

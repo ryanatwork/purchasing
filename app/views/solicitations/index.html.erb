@@ -1,0 +1,31 @@
+<h1>Listing solicitations</h1>
+
+<table>
+  <tr>
+    <th>Bid type</th>
+    <th>Bid description</th>
+    <th>Open date</th>
+    <th>Closed date</th>
+    <th>Contact</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @solicitations.each do |solicitation| %>
+  <tr>
+    <td><%= solicitation.bid_type %></td>
+    <td><%= solicitation.bid_description %></td>
+    <td><%= solicitation.open_date %></td>
+    <td><%= solicitation.closed_date %></td>
+    <td><%= solicitation.contact_id %></td>
+    <td><%= link_to 'Show', solicitation %></td>
+    <td><%= link_to 'Edit', edit_solicitation_path(solicitation) %></td>
+    <td><%= link_to 'Destroy', solicitation, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Solicitation', new_solicitation_path %>
