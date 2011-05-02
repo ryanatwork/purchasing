@@ -1,5 +1,11 @@
 namespace :app do
 
+  task :ensure_development_environment => :environment do
+    if Rails.env.production?
+      raise "\nYou're asking me to drop your production database"
+    end
+  end
+
   desc "Reset"
   task :reset => ["db:drop", "db:create", "db.migrate", "db:seed", "app:populate"]
   
