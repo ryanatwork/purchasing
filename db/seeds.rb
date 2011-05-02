@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+#Default values for Bid Types
+Bidtype.create(:abbreviation => "RFP", :description => "Request for Proposal")  
+Bidtype.create(:abbreviation => "RFQ", :description => "Request for Quote")  
+Bidtype.create(:abbreviation => "ITB", :description => "Invitation to Bid")  
