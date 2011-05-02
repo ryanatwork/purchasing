@@ -7,6 +7,14 @@
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 
 #Default values for Bid Types
-Bidtype.create(:abbreviation => "RFP", :description => "Request for Proposal")  
-Bidtype.create(:abbreviation => "RFQ", :description => "Request for Quote")  
-Bidtype.create(:abbreviation => "ITB", :description => "Invitation to Bid")  
+#Bidtype.create(:abbreviation => "RFP", :description => "Request for Proposal")  
+#Bidtype.create(:abbreviation => "RFQ", :description => "Request for Quote")  
+#Bidtype.create(:abbreviation => "ITB", :description => "Invitation to Bid")  
+
+[
+  {:abbreviation => "RFP", :description => "Request for Proposal"},
+  {:abbreviation => "RFQ", :description => "Request for Quote"},
+  {:abbreviation => "ITB", :description => "Invitation to Bid"},
+].each do |attributes|
+  Bidtype.find_or_create_by_abbreviation(attributes)
+end
