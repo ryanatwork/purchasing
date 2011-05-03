@@ -1,6 +1,7 @@
 class Solicitation < ActiveRecord::Base
   
-  belongs_to :bidtypes
+  has_many :bidtype
+  has_many :contacts
   
    validates :bid_description,  :presence => true
 
