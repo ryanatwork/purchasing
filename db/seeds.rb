@@ -16,5 +16,5 @@
   {:abbreviation => "RFQ", :description => "Request for Quote"},
   {:abbreviation => "ITB", :description => "Invitation to Bid"},
 ].each do |attributes|
-  Bidtype.find_or_create_by_abbreviation(attributes)
+  BidType.find_or_create_by_abbreviation(attributes)
 end

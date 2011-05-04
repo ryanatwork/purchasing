@@ -1,7 +1,7 @@
 Purchasing::Application.routes.draw do
-  get "home/index"
+  resources :bid_types
 
-  resources :bidtypes
+  get "home/index"
 
   resources :contacts
 
