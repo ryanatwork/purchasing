@@ -1,7 +1,7 @@
 class Bidtype < ActiveRecord::Base
   
-  belongs_to :solicitation
-  has_many :solicitation
+ 
+  has_many :solicitations
   
    validates :abbreviation,  :presence => true
    validates :description,  :presence => true
