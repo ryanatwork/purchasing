@@ -18,7 +18,7 @@
     <td><%= solicitation.bid_description %></td>
     <td><%= solicitation.open_date %></td>
     <td><%= solicitation.closed_date %></td>
-    <td><%= solicitation.contact_id %></td>
+    <td><%= solicitation.contact.name %></td>
     <td><%= link_to 'Show', solicitation %></td>
     <td><%= link_to 'Edit', edit_solicitation_path(solicitation) %></td>
     <td><%= link_to 'Destroy', solicitation, :confirm => 'Are you sure?', :method => :delete %></td>

@@ -1,0 +1,25 @@
+<h1>Listing bid_types</h1>
+
+<table>
+  <tr>
+    <th>Abbreviation</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bid_types.each do |bid_type| %>
+  <tr>
+    <td><%= bid_type.abbreviation %></td>
+    <td><%= bid_type.description %></td>
+    <td><%= link_to 'Show', bid_type %></td>
+    <td><%= link_to 'Edit', edit_bid_type_path(bid_type) %></td>
+    <td><%= link_to 'Destroy', bid_type, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bid type', new_bid_type_path %>

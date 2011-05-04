@@ -1,0 +1,2 @@
+module BidTypesHelper
+end

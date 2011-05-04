@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Abbreviation:</b>
+  <%= @bid_type.abbreviation %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @bid_type.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_bid_type_path(@bid_type) %> |
+<%= link_to 'Back', bid_types_path %>
