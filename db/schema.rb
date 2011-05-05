@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110504230435) do
+ActiveRecord::Schema.define(:version => 20110505184451) do
 
   create_table "bid_types", :force => true do |t|
     t.string   "abbreviation"
@@ -40,6 +40,21 @@ ActiveRecord::Schema.define(:version => 20110504230435) do
     t.date     "open_date"
     t.date     "closed_date"
     t.integer  "contact_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "vendors", :force => true do |t|
+    t.string   "name"
+    t.string   "company"
+    t.string   "address"
+    t.string   "address2"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.string   "phone"
+    t.string   "fax"
+    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
