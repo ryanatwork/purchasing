@@ -3,6 +3,7 @@
 <table>
   <tr>
     <th>Bid type</th>
+	<th>Bid Number</th>
     <th>Bid description</th>
     <th>Open date</th>
     <th>Closed date</th>
@@ -15,6 +16,7 @@
 <% @solicitations.each do |solicitation| %>
   <tr>
     <td><%= solicitation.bid_type.abbreviation %></td>
+ 	<td><%= solicitation.bid_number %></td>
     <td><%= solicitation.bid_description %></td>
     <td><%= solicitation.open_date %></td>
     <td><%= solicitation.closed_date %></td>

@@ -5,6 +5,7 @@ class Solicitation < ActiveRecord::Base
   
   
    validates :bid_description,  :presence => true
+   validates :bid_number,  :presence => true
 
 end
   
