@@ -1,4 +1,6 @@
 Purchasing::Application.routes.draw do
+  resources :vendors
+
   resources :bid_types
 
   get "home/index"
